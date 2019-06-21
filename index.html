@@ -1,24 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-<!--
-
-██╗  ██╗ █████╗ ██████╗ ██████╗ ██╗   ██╗
-██║  ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝
-███████║███████║██████╔╝██████╔╝ ╚████╔╝
-██╔══██║██╔══██║██╔═══╝ ██╔═══╝   ╚██╔╝
-██║  ██║██║  ██║██║     ██║        ██║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝        ╚═╝
-
-██████╗ ██╗██████╗ ████████╗██╗  ██╗██████╗  █████╗ ██╗   ██╗
-██╔══██╗██║██╔══██╗╚══██╔══╝██║  ██║██╔══██╗██╔══██╗╚██╗ ██╔╝
-██████╔╝██║██████╔╝   ██║   ███████║██║  ██║███████║ ╚████╔╝
-██╔══██╗██║██╔══██╗   ██║   ██╔══██║██║  ██║██╔══██║  ╚██╔╝
-██████╔╝██║██║  ██║   ██║   ██║  ██║██████╔╝██║  ██║   ██║
-╚═════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝
-
-
-
--->
 <head>
 	<title>Happy Birthday</title>
 	<meta charset="utf-8">
@@ -29,6 +10,7 @@
     <meta http-equiv="Cache-control" content="public">
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="7 days"/>
+    <meta name="copyright" content="Vinit Shahdeo | VIT Vellore"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -39,25 +21,33 @@ you give to every one who knows you.">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Happy Birthday!" />
     <meta property="og:description" content="May your birthday bring you as much as you happiness
-you give to every one who knows you" />
+     you give to every one who knows you" />
     <meta property="og:image" content="https://scontent.cdninstagram.com/t51.2885-19/s320x320/17332840_428978084117611_7673563513641500672_a.jpg" />
-    <meta property="og:url" content="https://vinitshahdeo.github.io/HBD" />
+    <meta property="og:url" content="https://anukritijha246.github.io/HBD" />
     <meta property="og:site_name" content="Happy Birthday!" />
 
     <meta name="twitter:card" content="website">
     <meta name="twitter:site" content="Happy Birthday!">
     <meta name="twitter:title" content="Happy Birthday!">
     <meta name="twitter:description" content="May your birthday bring you as much as you happiness
-you give to every one who knows you">
+     you give to every one who knows you">
     <meta name="twitter:image" content="https://scontent.cdninstagram.com/t51.2885-19/s320x320/17332840_428978084117611_7673563513641500672_a.jpg">
 
-<meta itemprop="name" content="Happy Birthday!">
-<meta itemprop="description" content="May your birthday bring you as much as you happiness
-you give to every one who knows you">
-<meta itemprop="image" content="https://scontent.cdninstagram.com/t51.2885-19/s320x320/17332840_428978084117611_7673563513641500672_a.jpg">
+	<meta itemprop="name" content="Happy Birthday!">
+	<meta itemprop="description" content="May your birthday bring you as much as you happiness
+	you give to every one who knows you">
+	<meta itemprop="image" content="https://scontent.cdninstagram.com/t51.2885-19/s320x320/17332840_428978084117611_7673563513641500672_a.jpg">
 
 	<style type="text/css">
 
+        *{
+            background: #fff;
+        }
+
+        #loveHeart{
+            background: transparent;
+            background: url('giphy.gif') no-repeat center;
+        }
 		#copyright{
 			font-family: 'Montserrat',sans-serif;
 			opacity: 0.8;
@@ -69,8 +59,16 @@ you give to every one who knows you">
 			text-decoration: none;
 			color:#339933;
 		}
+        #hbd_song{
+            display: none;
+        }
 	</style>
-	<link href="css/style.css" type="text/css" rel="stylesheet">
+    <script>
+        window.onload = function() {
+    document.getElementById("hbd_song").play();
+        }
+    </script>
+	<link href="css/style1.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="shortcut icon" href="./cake.png" type="image/png" />
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -90,10 +88,10 @@ you give to every one who knows you">
 				Date currentTime = <span class="keyword">new</span> Date(); <br />
 				SimpleDateFormat formatter = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd HH:mm:ss"</span>);<br />
 				String dateString = formatter.format(currentTime);<br />
-				if( dateString.equals(<span class="string">"2020-03-10 00:00:00"</span>) ){</br>
+				if( dateString.equals(<span class="string">"2020-03-19 00:00:00"</span>) ){</br>
 					u.age ++;</br>
 				}</br>
-				<span class="comments">// My love will be with you simultaneously.</span><br />
+				<span class="comments">// My best wishes will be with you simultaneously.</span><br />
 				<span class="keyword">new</span> Thread (){<br />
 				@Override </br>
 				<span class="comments">// Forever and ever. I wish</span><br />
@@ -109,11 +107,12 @@ you give to every one who knows you">
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden" style="display:none"></canvas>
+                <audio id="hbd_song" src="audio/hbd.mp3" loop="loop"></audio>
 			</div>
 		</div>
 		<div id="copyright">
 			<hr>
-			<p>Made with love by <a href="https://anukritijha246.github.io/about/" target="_blank">Anukriti Jha</a></p>
+			<p>Made by <a href="https://anukritijha246.github.io/about/" target="_blank">Anukriti Jha</a></p>
 		</hr>
 		</div>
 	</div>
